@@ -12,12 +12,11 @@ After a hard look around for an alternative format for MARC and finding none tha
 Here is a sample record showing how the format should look:
 
 
-// JBIB specification\
-// Created by Kendall Purser\
-// For Bonneville County Library District\
-// 2024-04-20\
-
-{\
+    // JBIB specification\
+    // Created by Kendall Purser\
+    // For Bonneville County Library District\
+    // 2024-04-20\
+    {\
 	"rec_type": "JBIB", //JavaScript Bibliography\
 	"title": "Easy Chinese Food for the Hungry",\
 	"author": ["I. M. Cook", "Ben Heere"],\
@@ -35,7 +34,7 @@ Here is a sample record showing how the format should look:
 	},\
 	"subject": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],\
 	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions."\
-}\
+    }\
 
 #Plan for Implementation
 1. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
