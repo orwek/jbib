@@ -40,8 +40,9 @@ Here is a sample record showing how the format should look:
 
 #Plan for Implementation
 1. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
-2. Create a large repository of JBIB records to pull from (z39.50 equivalent)
-3. Promote the format to the powers that be (Other local libraries, Library of Congress, American Library Association, OCLC, etc...)
+2. Create tools to transfer bibliographic records to and from JBIB and other standard records like MARC
+3. Create a large repository of JBIB records to pull from (z39.50 equivalent)
+4. Promote the JBIB format to the powers that be (Other local libraries, Library of Congress, American Library Association, OCLC, etc...)
 
 #Benefits of jbib
 1. JSON is a widely accepted storage format with interpreters in all major programing languages
