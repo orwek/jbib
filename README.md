@@ -1,11 +1,11 @@
 # jbib
 An alternative bibliographic format to MARC for libraries.
 
-I come from a web development background rather than a library background, so my approach to storing information is quite different from the traditional approach. For a storage format to be accepatble on the web it needs to fit the following criteria:
+I come from a web development background rather than a library background, so my approach to storing information is quite different from the traditional approach. As such, I wanted a storage solution that fit the following criteria:
 
 1. Easy for humans to read (catalogers)
 2. Easy for computers to read (search engines)
-3. Have a small data footprint (less than 1 kilobyte in size if possible)
+3. Limited keystrokes for a small data footprint (less than 1 kilobyte in size if possible)
 
 After a hard look around for an alternative format for MARC and finding none that met these criteria, I decided to create my own. The closest format that had most of these qualities was BIBSJSON, so I decided to take that as a starting point and improve on it. The format I arrived at I am calling JBIB (or JSON Bibliography). This protocol is stored in JSON format, and should be validated as such.
 
