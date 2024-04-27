@@ -16,25 +16,25 @@ Here is a sample record showing how the format should look:
 // For Bonneville County Library District
 // 2024-04-20
 
-{
-	"rec_type": "JBIB", //JavaScript Bibliography
-	"title": "Easy Chinese Food for the Hungry",
-	"author": ["I. M. Cook", "Ben Heere"],
-	"publisher": "Ben Heere Publishing",
-	"year": 2014,
-	"item_type": "book",
-	"pages": 200,
-	"height_cm": 19,
-	"series": ["International Foods or Die", 2], // Series title, book in series
-	"identifier": {
-		"isbn": [9785555555555, 9785555555551],
-		"loc": ["0-999-55555"],
-		"doi": ["10.1644\/14-MAMM-A-004"],
-		"call_num": "FOOD Easy",
-	},
-	"subject": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],
-	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions."
-}
+{\
+	"rec_type": "JBIB", //JavaScript Bibliography\
+	"title": "Easy Chinese Food for the Hungry",\
+	"author": ["I. M. Cook", "Ben Heere"],\
+	"publisher": "Ben Heere Publishing",\
+	"year": 2014,\
+	"item_type": "book",\
+	"pages": 200,\
+	"height_cm": 19,\
+	"series": ["International Foods or Die", 2], // Series title, book in series\
+	"identifier": {\
+		"isbn": [9785555555555, 9785555555551],\
+		"loc": ["0-999-55555"],\
+		"doi": ["10.1644\/14-MAMM-A-004"],\
+		"call_num": "FOOD Easy",\
+	},\
+	"subject": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],\
+	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions."\
+}\
 `
 #Plan for Implementation
 1. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
