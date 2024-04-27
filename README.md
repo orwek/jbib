@@ -16,6 +16,7 @@ Here is a sample record showing how the format should look:
     // Created by Kendall Purser
     // For Bonneville County Library District
     // 2024-04-20
+    
     {
     "rec_type": "JBIB", //JavaScript Bibliography
     "title": "Easy Chinese Food for the Hungry",
