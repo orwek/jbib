@@ -35,7 +35,7 @@ Here is a sample record showing how the format should look:
     },
 	"subject": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],
 	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. 
-        Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions."
+          Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions."
     }
 
 #Plan for Implementation
