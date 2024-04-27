@@ -17,7 +17,7 @@ Here is a sample record showing how the format should look:
     // For Bonneville County Library District
     // 2024-04-20
     {
-    	"rec_type": "JBIB", //JavaScript Bibliography
+    "rec_type": "JBIB", //JavaScript Bibliography
 	"title": "Easy Chinese Food for the Hungry",
 	"author": ["I. M. Cook", "Ben Heere"],
 	"publisher": "Ben Heere Publishing",
