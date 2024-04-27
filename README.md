@@ -27,7 +27,7 @@ Here is a sample record showing how the format should look:
     "pages": 200,
     "height_cm": 19,
     "series": ["International Foods or Die", 2], // Series title, book in series
-    "identifier": {
+    "id": {
         "isbn": [9785555555555, 9785555555551],
         "loc": ["0-999-55555"],
         "doi": ["10.1644\/14-MAMM-A-004"],
@@ -42,3 +42,11 @@ Here is a sample record showing how the format should look:
 1. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
 2. Create a large repository of JBIB records to pull from (z39.50 equivalent)
 3. Promote the format to the powers that be (Other local libraries, Library of Congress, American Library Association, OCLC, etc...)
+
+#Benefits of jbib
+1. JSON is a widely accepted storage format with interpreters in all major programing languages
+2. Lists of data stored in arrays are easy to itterate over, and gives the computer increased performance and searchability
+3. Easy for catalogers to read the fields rather than memorizing MARC numbers and subfields
+4. JSON validation tools are widely available
+5. Expandable beyond the base specificaiton if libraries want to add more fields
+6. Comments can be left in the file without needing additional systems: // (end of line) and /* (multi-line) */  
