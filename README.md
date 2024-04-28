@@ -1,4 +1,4 @@
-# jbib
+# JBIB
 An alternative bibliographic format to MARC for libraries.
 
 I come from a web development background rather than a library background, so my approach to storing information is quite different from the traditional approach. As such, I wanted a storage solution that fit the following criteria:
@@ -44,7 +44,7 @@ Here is a sample record showing how the format should look:
 3. Create a large repository of JBIB records to pull from (z39.50 equivalent)
 4. Promote the JBIB format to the powers that be (Other local libraries, Library of Congress, American Library Association, OCLC, etc...)
 
-#Benefits of jbib
+#Benefits of JBIB
 1. JSON is a widely accepted storage format with interpreters in all major programing languages
 2. Lists of data stored in arrays are easy to itterate over, and gives the computer increased performance and searchability
 3. Easy for catalogers to read the fields rather than memorizing MARC numbers and subfields
