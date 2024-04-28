@@ -12,10 +12,12 @@ After a hard look around for an alternative format for MARC and finding none tha
 Here is a sample record showing how the format should look:
 
 
-    /* JBIB specification 
+    /* 
+    JBIB specification 
     Created by Kendall Purser
     For Bonneville County Library District
-    2024-04-20*/
+    2024-04-20
+    */
     
     {
     "rec_type": "JBIB", //JavaScript Bibliography
