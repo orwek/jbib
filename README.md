@@ -46,8 +46,8 @@ Here is a sample record showing how the format should look:
 
 #Benefits of JBIB
 1. JSON is a widely accepted storage format with interpreters in all major programing languages
-2. Lists of data stored in arrays are easy to itterate over, and gives the computer increased performance and searchability
-3. Easy for catalogers to read the fields rather than memorizing MARC numbers and subfields
-4. JSON validation tools are widely available
+2. JSON validation tools are widely available
+3. Lists of data stored in arrays are easy to itterate over, and gives the computer increased performance and searchability
+4. Easy for catalogers to read the fields rather than memorizing MARC numbers and subfields
 5. Expandable beyond the base specificaiton if libraries want to add more fields
 6. Comments can be left in the file without needing additional systems: // (end of line) and /* (multi-line) */  
