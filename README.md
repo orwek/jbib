@@ -53,6 +53,10 @@ Here is a sample record showing how the JBIB format should look:
 7. Uses "blog style" tags for easy subject searching, rather than complicated subject headings (Literally: "What would someone type in a search engine who is looking for this book?")
 8. Much shorter and easier to use than the proposed BIBFRAME format that is currently in development
 
+# Limitations of JBIB
+
+If you are a big university library where exact editions of a particular book is important. JBIB is not for you! The primary audience for JBIB is small to medium size public, community, and school libraries. (So the 80-90% of libraries that don't care about specific editions, their patrons just care about the title and author.) 
+
 # Plan for Implementation
 1. Create tools to transfer bibliographic records to and from JBIB and MARC
 2. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
