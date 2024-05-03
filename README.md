@@ -34,6 +34,7 @@ Here is a sample record showing how the format should look:
         "loc": ["0-999-55555"],
         "doi": ["10.1644\/14-MAMM-A-004"],
         "call_num": "FOOD Easy",
+	"dewey": 641.595
     },
 	"subject": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],
 	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. 
