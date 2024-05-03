@@ -55,7 +55,7 @@ Here is a sample record showing how the JBIB format should look:
 
 # Limitations of JBIB
 
-If you are a big university library where exact editions of a particular book is important. JBIB is not for you! The primary audience for JBIB is small to medium size public, community, and school libraries. (So the 80-90% of libraries that don't care about specific editions, their patrons just care about the title and author.) 
+If you are a big university library where exact editions of a particular book is important. JBIB is not for you! The primary audience for JBIB is small to medium size public, community, and school libraries. (So the 80-90% of libraries that don't care about specific editions, their patrons just care about the title and author.) That being said, if you would like to extend JBIB so that it contains the additional fields you need, go for it! You have my blessing!
 
 # Plan for Implementation
 1. Create tools to transfer bibliographic records to and from JBIB and MARC
