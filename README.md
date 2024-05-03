@@ -6,7 +6,7 @@ I come from a web development background, which means my job for many years was 
 
 Cataloging books using these traditional methods takes a LONG time and has a steep learning curve. The end result of these efforts is a record which is difficult for computers to parse and search, and is difficult for humans to read. In effect: a waste of time and money. Most libraries (public and school libraries) do not need the complicated records that are the standard in the industry. I cannot even guess the number of hours wasted each year on cataloging when it could be done a simpler way. So, after learning and using these systems on a daily basis for almost two years, I decided it was time to do something about it.
 
-JBIB is my answer to this problem. It is compact, easy to use, takes very little training, and is flexible enough that libraries can add to it as needed. JBIB is based on BIBSJSON, which took **huge** steps in the right direction for modern computing criteria. The reason for using JSON format to store information is simple. JSON is widely accpeted and can be parsed by all modern programming languages, JSON validators are plentiful and easy to use, it is a storage format that is also easy for humans to read.
+JBIB is my answer to this problem. It is compact, easy to use, takes very little training, and is flexible enough that libraries can add to it as needed. JBIB is based on BIBSJSON, which took **huge** steps in the right direction for modern computing criteria. The reason for using JSON format to store information is simple. JSON is widely accpeted and can be parsed by all modern programming languages, JSON validators are plentiful and easy to use, and it is a storage format that is also easy for humans to read.
 
 # JBIB Sample
 Here is a sample record showing how the JBIB format should look:
@@ -44,16 +44,16 @@ Here is a sample record showing how the JBIB format should look:
 # Benefits of JBIB
 1. JSON is a widely accepted storage format with interpreters in all major programing languages
 2. JSON validation tools are widely available
-3. Lists of data stored in arrays are easy to itterate over than traditional MARC formatting, this gives the computer increased performance and searchability
-4. Easy for catalogers to read the fields rather than memorizing MARC numbers and subfields
+3. Lists of data stored in arrays are much easier to itterate over than traditional MARC formatting, this gives the computer increased performance and searchability
+4. Easy for catalogers to read the fields rather than memorizing MARC numbers, indicators, and subfields
 5. Expandable beyond the base specificaiton if libraries want to add more fields
 6. Comments can be left in the file without needing additional systems: // (end of line) and /* (multi-line) */
 7. Uses "blog style" tags for easy subject searching, rather than complicated subject headings (Literally: "What would someone type in a search engine who is looking for this book?")
-8. Much shorter and easier to use than the proposed BIBFRAME format
+8. Much shorter and easier to use than the proposed BIBFRAME format that is currently in development
 
 # Plan for Implementation
-1. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
-2. Create tools to transfer bibliographic records to and from JBIB and MARC
+1. Create tools to transfer bibliographic records to and from JBIB and MARC
+2. Create a simple ILMS that runs on JBIB that is Free Open Source Software (FOSS).
 3. Create a large repository of JBIB records to pull from (z39.50 equivalent)
 4. Promote the JBIB format to the powers that be (Other local libraries, Library of Congress, American Library Association, OCLC, etc...)
 
