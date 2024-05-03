@@ -1,15 +1,15 @@
 # JBIB
 An alternative bibliographic format to MARC for libraries.
 
-I come from a web development background rather than a library background, so my approach to storing information is quite different from the traditional approach. As such, I wanted a storage solution that fit the following criteria:
+# The Argument for JBIB
+I come from a web development background, which means my job for many years was to organize information and make it searchable. When I stepped into the library industry I was shocked and disappointed at the outdated and difficult methods used to categorize and organize bibliographic information. Library systems were being written in PERL, and using data standards (MARC, AACR2) that were created in the 1960s. These standards and methods were created when computers were in the dawn of their existence and were not regularly used. I was also disappointed by the approach to subject headings used in the library industry (5 volumes of subject headings... really?). So, after learning and using these systems on a daily basis for almost two years, I decided it was time to do something about it.
 
-1. Easy for humans to read (catalogers)
-2. Easy for computers to read (search engines)
-3. Limited keystrokes for a small data footprint (less than 1 kilobyte in size if possible)
+Cataloging books using these traditional methods takes a LONG time and has a steep learning curve. The end result of these efforts is a record which is difficult for computers to parse and search, and is difficult for humans to read. In effect a waste of time and money. Most libraries do not need the complicated records that are the standard in the industry. I cannot even guess the number of hours wasted each year on cataloging when it could be done a simpler way. 
 
-After a hard look around for an alternative format for MARC and finding none that met these criteria, I decided to create my own. The closest format that had most of these qualities was BIBSJSON, so I decided to take that as a starting point and improve on it. The format I arrived at I am calling JBIB (or JSON Bibliography). This protocol is stored in JSON format, and should be validated as such.
+JBIB is my answer to this problem. It is compact, easy to use, takes very little training, and is flexible enough that libraries can add to it as needed. JBIB is based on BIBSJSON, which took huge steps in the right direction for modern computing criteria. The reason for using JSON format to store information is simple. JSON can be parsed by all modern programming languages, JSON validators are plentiful and easy to use, it is a storage format that is also easily human readable.
 
-Here is a sample record showing how the format should look:
+# JBIB Sample
+Here is a sample record showing how the JBIB format should look:
 
 
     /* 
