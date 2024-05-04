@@ -1,5 +1,5 @@
 # JBIB
-An alternative bibliographic format to MARC for libraries.
+An alternative bibliographic format to MARC for public, community, and school libraries.
 
 # The Argument for JBIB
 I come from a web development background, which means my job for many years was to organize information and make it searchable. My primary focus for managing hundreds of web sites was the end user. 
