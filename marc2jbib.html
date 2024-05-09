@@ -33,6 +33,7 @@
 		<option>‡</option>
 	</select> 
 	  <input type="button" value="Convert" onclick="app.convert();" style="float: right;"/>
+	   <input type="button" value="Test MARC" onclick="app.marc_in();" style="float: right;"/>
 	  <br style="clear: both;" />
 	  <br />
 	  <hr />
@@ -67,11 +68,15 @@
 					// 490a- series name
 					// 500a- notes
 					// 520a- summary
-					// 650a, 651a, 655- subject
+					// 650a, 6540v, 651a, 651v, 655a- subject
 					// 800v, 810v- series #
-					// 942a- item type
+					// 942c- item type
 				// Parse values and store in tmp_JSON
 				// Return tmp_JSON to JBIB field
+			},
+			marc_in: function () {
+				app.get("marc").value = "
+				
 			}
 			
 		}
