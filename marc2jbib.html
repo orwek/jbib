@@ -26,7 +26,7 @@
 	  <textarea id="marc" placeholder="Copy/Paste MARC record here."></textarea>
 	  <textarea id="jbib" placeholder="JBIB record appears here."></textarea>
 	  <br /><br />
-	   Subfield Delimiter: 
+	   Subfield Delimiter: <!-- may be easier to just parse for both -->
 	  <select>
 		<option></option>
 		<option>$</option>
@@ -51,8 +51,11 @@
 			},
 			convert: function () {
 				// get MARC
+				let marc = app.get("marc").value;
+				
 				// Split by line ending
-				// parse through for necessary field numbers
+				
+				// parse through array for necessary field numbers
 					// 020a- isbns
 					// 082a- Call # or dewey
 					// 100a- Author
