@@ -56,23 +56,31 @@
     .red {
       color: darkred;
     }
+    .right {
+      float: right;
+      margin-left: 5px;
+    }
     </style>
   </head>
   <body>
 	<!-- HTML goes here -->
   <h3><img src="convert.svg" />JBIB/MARC Converter</h3>
   <div id="nav">
+    <!-- JBIB buttons -->
     <button onclick="jbib_file.click();" class="blue"><img src="open.svg" class="icon" /> JBIB</button>
     <input type="file" id="jbib_file" name="jbib_file" onchange="app.load(0)" style="display: none;"/>
     <button onclick="app.save(0);" class="green"><img src="save.svg" class="icon" /> JBIB</button>
-    <button onclick="app.to_jbib();"><img src="convert.svg" class="icon" /> JBIB <= </button>
-    |
-    <button onclick="marc_file.click();" class="blue"><img src="open.svg" class="icon" /> MARC</button>
+    <button onclick="app.to_jbib();"><img src="convert.svg" class="icon" /> => JBIB</button>
+    
+    <!-- MARC buttons -->
+    <button onclick="app.to_marc();" class="right"><img src="convert.svg" class="icon" /> => MARC</button>
+     <button onclick="app.save(1);" class="green right"><img src="save.svg" class="icon" /> MARC</button>
+    <button onclick="marc_file.click();" class="blue right"><img src="open.svg" class="icon" /> MARC</button>
      <input type="file" id="marc_file" name="marc_file" onchange="app.load(1)" style="display: none;" />
-    <button onclick="app.save(1);" class="green"><img src="save.svg" class="icon" /> MARC</button>
-    <button onclick="app.to_marc();"><img src="convert.svg" class="icon" /> => MARC</button>
+   
+    
  </div>
-
+<br style="clear: both;" />
   <textarea id="jbib" placeholder="JBIB Here"></textarea>
   <textarea id="marc" placeholder="MARC Here"></textarea>
   <div id="status" class="red"> Status: <span id="msg">Work in Progress, not functional yet.</span></div>
