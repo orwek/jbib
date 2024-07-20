@@ -41,7 +41,7 @@ Here is a sample record showing how the JBIB format should look:
 	"search": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],
 	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. 
         Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions.",
-	"notes" : ""
+	"notes" : "1-A Taste of Asia, 2-Ginger, 3-Recipes, etc..."
     }
 
 # Benefits of JBIB
