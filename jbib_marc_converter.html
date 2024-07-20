@@ -60,6 +60,9 @@
       float: right;
       margin-left: 5px;
     }
+    .hide, #jbib_file, #marc_file {
+      display: none;
+    }
     </style>
   </head>
   <body>
@@ -68,7 +71,7 @@
   <div id="nav">
     <!-- JBIB buttons -->
     <button onclick="jbib_file.click();" class="blue"><img src="open.svg" class="icon" /> JBIB</button>
-    <input type="file" id="jbib_file" name="jbib_file" onchange="app.load(0)" style="display: none;"/>
+    <input type="file" id="jbib_file" name="jbib_file" onchange="app.load(0)" />
     <button onclick="app.save(0);" class="green"><img src="save.svg" class="icon" /> JBIB</button>
     <button onclick="app.to_jbib();"><img src="convert.svg" class="icon" /> => JBIB</button>
     
@@ -76,7 +79,7 @@
     <button onclick="app.to_marc();" class="right"><img src="convert.svg" class="icon" /> => MARC</button>
      <button onclick="app.save(1);" class="green right"><img src="save.svg" class="icon" /> MARC</button>
     <button onclick="marc_file.click();" class="blue right"><img src="open.svg" class="icon" /> MARC</button>
-     <input type="file" id="marc_file" name="marc_file" onchange="app.load(1)" style="display: none;" />
+     <input type="file" id="marc_file" name="marc_file" onchange="app.load(1)" />
    
     
  </div>
@@ -91,11 +94,11 @@
       load: function (x) {
         let fr = new FileReader();
         if (x == 0) {
-          fr.readAsText(jbib_file.files[0]);
+          fr.readAsText(jbib_file.files[0]); // uses the name html attribute, why???
           fr.onload = function() {jbib.innerHTML = fr.result;}
           msg.innerHTML = "Loaded JBIB."
         } else {
-          fr.readAsText(marc_file.files[0]);
+          fr.readAsText(marc_file.files[0]);  // uses the name html attribute, why???
           fr.onload = function() {marc.value = fr.result;}
           msg.innerHTML = "Loaded MAARC."
         }
@@ -130,10 +133,13 @@
       },
       to_jbib: function () {
         msg.innerHTML = "Sorry, Not Functional Yet!";
+        
       },
       to_marc: function () {
         msg.innerHTML = "Sorry, Not Functional Yet!";
-      }
+      },
+      jbib_template: {},
+      marc_template: ``
     };
   </script>
   </body>
