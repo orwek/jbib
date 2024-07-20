@@ -47,12 +47,14 @@
       margin-bottom: 5px;
       cursor: pointer;
     }
-    #msg, #nav {
-      color: darkred;
+    #status, #nav {
       width: 805px;
       height: 25px;
       background-color: #e7e7e7;
       padding: 5px;
+    }
+    .red {
+      color: darkred;
     }
     </style>
   </head>
@@ -60,39 +62,53 @@
 	<!-- HTML goes here -->
   <h3><img src="convert.svg" />JBIB/MARC Converter</h3>
   <div id="nav">
-    <button onclick="app.load(0);" class="blue"><img src="open.svg" class="icon" /> JBIB</button>
+    <button onclick="jbib_file.click();" class="blue"><img src="open.svg" class="icon" /> JBIB</button>
+    <input type="file" id="jbib_file" name="jbib_file" onchange="app.load(0)" style="display: none;"/>
     <button onclick="app.save(0);" class="green"><img src="save.svg" class="icon" /> JBIB</button>
     <button onclick="app.to_jbib();"><img src="convert.svg" class="icon" /> JBIB <= </button>
     |
-    <button onclick="app.load(1);" class="blue"><img src="open.svg" class="icon" /> MARC</button>
+    <button onclick="marc_file.click();" class="blue"><img src="open.svg" class="icon" /> MARC</button>
+     <input type="file" id="marc_file" name="marc_file" onchange="app.load(1)" style="display: none;" />
     <button onclick="app.save(1);" class="green"><img src="save.svg" class="icon" /> MARC</button>
     <button onclick="app.to_marc();"><img src="convert.svg" class="icon" /> => MARC</button>
  </div>
 
   <textarea id="jbib" placeholder="JBIB Here"></textarea>
   <textarea id="marc" placeholder="MARC Here"></textarea>
-  <div id="msg"> Status: Work in Progress, not functional yet.</div>
+  <div id="status" class="red"> Status: <span id="msg">Work in Progress, not functional yet.</span></div>
   
   <script>
     // JavaScript goes here
     const app = {
       load: function (x) {
-        
+        let fr = new FileReader();
+        if (x == 0) {
+          fr.readAsText(jbib_file.files[0]);
+          fr.onload = function() {jbib.innerHTML = fr.result;}
+          msg.innerHTML = "Loaded JBIB."
+        } else {
+          fr.readAsText(marc_file.files[0]);
+          fr.onload = function() {marc.value = fr.result;}
+          msg.innerHTML = "Loaded MAARC."
+        }
       },
       save: function (y) {
         let filename = "";
         let content;
-        if ( y == 0 ) {
+        if (y == 0) {
           filename = "file.jbib";
           content = jbib.value;
+          msg.innerHTML = "Saved jbib file.";
         } else {
           filename = "file.marc";
           content = marc.value;
+          msg.innerHTML = "Saved marc file.";
         }
         app.download(filename, content);
       },
       download: function (f_name, f_content) {
         // Create a Blob, fill it with content, then save it
+        // based on https://www.youtube.com/watch?v=iDtWDU6ajyA
         const element = document.createElement('a');
         const blob = new Blob([f_content], { type: 'plain/text'});
         const file_url = URL.createObjectURL(blob);
@@ -105,10 +121,10 @@
         document.body.removeChild(element);
       },
       to_jbib: function () {
-      
+        msg.innerHTML = "Sorry, Not Functional Yet!";
       },
       to_marc: function () {
-        
+        msg.innerHTML = "Sorry, Not Functional Yet!";
       }
     };
   </script>
