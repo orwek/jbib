@@ -80,7 +80,29 @@
         
       },
       save: function (y) {
-      
+        let filename = "";
+        let content;
+        if ( y == 0 ) {
+          filename = "file.jbib";
+          content = jbib.value;
+        } else {
+          filename = "file.marc";
+          content = marc.value;
+        }
+        app.download(filename, content);
+      },
+      download: function (f_name, f_content) {
+        // Create a Blob, fill it with content, then save it
+        const element = document.createElement('a');
+        const blob = new Blob([f_content], { type: 'plain/text'});
+        const file_url = URL.createObjectURL(blob);
+        element.setAttribute("href", file_url);
+        element.setAttribute("download", f_name);
+        element.style.display = "none";
+        // create click and remove element
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
       },
       to_jbib: function () {
       
