@@ -38,9 +38,10 @@ Here is a sample record showing how the JBIB format should look:
         "call_num": "FOOD Easy",
         "dewey": 641.595
     },
-	"subject": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],
+	"search": ["non-ficiton", "recipe", "china", "chinese", "food", "cooking"],
 	"summary": "One hundred easy to make Chinese recipes for the hopeless housewife and budding chef. 
-        Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions."
+        Cook and Heere take you through each recipe step by step with easy to follow pictures and instructions.",
+	"notes" : ""
     }
 
 # Benefits of JBIB
